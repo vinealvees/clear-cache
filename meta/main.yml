@@ -1,0 +1,15 @@
+galaxy_info:
+  author: Vinicius A Santos // Github vinealvees
+  description: This role has objective to clear all cache profiles of F5 BIG IP LTM
+  license: license (GPL-2.0-or-later, MIT, etc)
+  min_ansible_version: 2.9
+  galaxy_tags: 
+    f5
+    big-ip
+    bigip
+    clear-cache
+    clear
+    cache
+    tmsh
+  dependencies:
+    Requires BIG-IP software version >= 12

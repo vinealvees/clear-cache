@@ -1,0 +1,16 @@
+---
+# tasks file for clear-cache
+- name: Cleaning Cache (BIG IP)
+  bigip_command:
+    commands: 
+      -"{{ balancerCommands }}"
+    provider:
+      server: "{{ balancerName }}"
+      user: "{{ balancerUser }}"
+      password: "{{ balancerPass }}"
+      validate_certs: no
+  register: stdout
+  delegate_to: localhost
+  notify: 
+    - Validation
+...

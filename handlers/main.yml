@@ -1,0 +1,11 @@
+---
+# handlers file for clear-cache
+- name: Validation
+  debug:
+    msg: "Sucess"
+  when: stdout.changed == 1
+- name: Validation
+  debug:
+    msg: "Fail"
+  when: stdout.changed == 0
+...

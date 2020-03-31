@@ -1,0 +1,7 @@
+---
+# defaults file for clear-cache
+balancerName: BIGIP_DEVICE
+balancerUser: USER
+balancerPass: PASSWORD
+balancerCommands: "delete /ltm profile ramcache all"
+...
